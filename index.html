@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressursarkiv</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="ressurser.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button class="tab active" data-category="HTML">HTML</button></li>
+                <li><button class="tab" data-category="CSS">CSS</button></li>
+                <li><button class="tab" data-category="JavaScript">JavaScript</button></li>
+                <li><button class="tab" data-category="React">React</button></li>
+                <li><button class="tab" data-category="Sanity and headless CMS">Sanity and headless CMS</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 id="category-title">HTML</h1>
+            <p id="category-text"></p>
+            <ul id="resource-links"></ul>
+        </section>
+    </main>
+</body>
+</html>
