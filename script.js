@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resourceLinks = document.getElementById("resource-links");
 
     const updateContent = (category) => {
-        const resource = resources.find(r => r.category === category);
+        const resource = resources.filter(r => r.category === category).map(r => r)[0];
 
         if (resource) {
             title.textContent = resource.category;
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .join('');
         }
     };
-  
+
     updateContent("HTML");
 
     tabs.forEach(tab => {
